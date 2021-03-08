@@ -2,7 +2,8 @@
   if (!global.XMIND) {
     global.XMIND = Object.create(null);
   }
-  global.XMIND.constant = {
+
+  global.XMIND.constants = {
     columns: [
       {
         title: '账单时间',
