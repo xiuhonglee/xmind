@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xmind</title>
+</head>
+
+<body>
+  <h1>xmind</h1>
+  <input id="csv" type="file" />
+
+  <table>
+    <tr>
+      <th scope="col">账单时间</th>
+      <th scope="col">账单类型</th>
+      <th scope="col">账单分类</th>
+      <th scope="col">账单金额</th>
+    </tr>
+    <tr>
+      <td scope="row">1561910400000</td>
+      <td>类型：0</td>
+      <td>分类：8s0p77c323</td>
+      <td>金额：5400</td>
+    </tr>
+  </table>
+</body>
+<script src="./data/constant.js"></script>
+<script src="./loaddata.js"></script>
+<script src="./mock.js"></script>
+<script src="./index.js"></script>
+<script>
+  const dataSource = [
+    {
+      time: 1561910400000,
+      type: 0,
+      category: '8s0p77c323',
+      amount: 5400
+    }
+  ]
+
+  // 解析
+  function createTable(colums, dataSource) {
+  }
+</script>
+
+</html>
