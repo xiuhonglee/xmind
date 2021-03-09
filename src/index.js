@@ -1,3 +1,8 @@
+XMIND.define("index", [], function() {
+
+
+});
+
 (function (global) {
   // 监听
   global.XMIND.listenFileChange((dataSource) => {
@@ -13,7 +18,6 @@
       tr.appendChild(th);
     }
     table.appendChild(tr);
-    // app.appendChild(table);
     // 创建表内容
     for (let j = 0; j < dataSource.length; j++) {
       const tr = document.createElement('tr');
