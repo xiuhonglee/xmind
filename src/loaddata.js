@@ -1,6 +1,7 @@
-'use stric';
+'use strict';
 
-(function (global) {
+XMIND.define(['uploadFile'], [], function () {
+
   function listenFileChange(callback) {
     let fileInput = document.getElementById('csv');
     let readFile = function () {
@@ -30,5 +31,7 @@
     return JSON.stringify(result); //JSON
   }
 
-  global.XMIND['listenFileChange'] = listenFileChange;
-})(window);
+  return {
+    listenFileChange: listenFileChange,
+  };
+});
